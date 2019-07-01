@@ -20,7 +20,7 @@ class LanguageRepository extends ServiceEntityRepository
     }
 
     // /**
-    //  * @return Language[] Returns an array of Language objects
+    //  * @return LanguageFixtures[] Returns an array of LanguageFixtures objects
     //  */
     /*
     public function findByExampleField($value)
@@ -37,7 +37,7 @@ class LanguageRepository extends ServiceEntityRepository
     */
 
     /*
-    public function findOneBySomeField($value): ?Language
+    public function findOneBySomeField($value): ?LanguageFixtures
     {
         return $this->createQueryBuilder('l')
             ->andWhere('l.exampleField = :val')
