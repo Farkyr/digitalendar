@@ -11,9 +11,9 @@ class CityFixtures extends Fixture
     public function load(ObjectManager $manager)
     {
         $city1 = new city();
-        $city1->setName("Lanion");
+        $city1->setName("Lannion");
         $manager->persist($city1);
-        $this->setReference("city-lanion", $city1);
+        $this->setReference("city-lannion", $city1);
 
         $city2 = new city();
         $city2->setName("Paris");
