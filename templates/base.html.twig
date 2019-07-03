@@ -28,10 +28,16 @@
             </header>
         {% endblock %}
 
-    <main role="main">
-        {% block body %}
-        {% endblock %}
-    </main>
+        <main role="main">
+            <div class="py-5 bg-light">
+                <div class="container">
+                    {% block body %}
+
+                    {% endblock %}
+                </div>
+            </div>
+        </main>
+
         {% block footer %}
         <footer class="text-muted">
             <div class="container">
