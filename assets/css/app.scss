@@ -44,3 +44,8 @@ footer {
 footer p {
     margin-bottom: .25rem;
 }
+.fit-image{
+    width: 100%;
+    object-fit: contain;
+    height: 300px; /* only if you want fixed height */
+}
