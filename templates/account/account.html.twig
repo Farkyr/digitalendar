@@ -1,10 +1,9 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello {{ app.user }}{% endblock %}
+{% block title %}Bonjour {{ app.user }}{% endblock %}
 
 {% block body %}
-    <h1>Hello {{ app.user }}! ✅</h1>
-    <h1>Mon compte</h1>
+    <h1>Compte de {{ app.user }}✔️</h1>
     <hr>
     <ul>
         <li>Email : {{ app.user.email }}</li>
@@ -13,6 +12,7 @@
     <a href="#" class="btn btn-primary">Modifier</a>
 
     <div id="events" class="album py-5">
+
 
         <h2>Mes événements</h2>
 

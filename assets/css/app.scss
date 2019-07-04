@@ -49,3 +49,62 @@ footer p {
     object-fit: contain;
     height: 300px; /* only if you want fixed height */
 }
+
+.btn-primary {
+    color: #fff;
+    background-color: #10313f;
+    border-color: #114756;
+    &:hover {
+        color: #fff;
+        background-color: #124c5c;
+        border-color: #136879;
+    }
+    &:focus{
+        box-shadow: 0 0 0 0rem;
+    }
+    &:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus {
+        box-shadow: 0 0 0 0.2rem rgba(30, 143, 167, 0.86);
+    }
+    &:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+        color: #fff;
+        background-color: #124c5c;
+        border-color: #136879;
+    }
+}
+
+.list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color: #10313f;
+    border-color: #114756;
+}
+
+.navbar{
+    background-color: #10313f;
+
+    &-brand{
+        color: #FFFFFF;
+        &:hover {
+            color: #dbdbdb;
+            text-decoration: none;
+        }
+    }
+    nav{
+        a{
+            color: #FFFFFF;
+            &:hover {
+                color: #dbdbdb;
+                text-decoration: none;
+                border-bottom: #FFFFFF 2px solid;
+            }
+        }
+        .admin{
+            color: #FFFFFF;
+            &:hover {
+                color: #dbdbdb;
+                text-decoration: none;
+                border: #FFFFFF 2px solid;
+            }
+        }
+    }
+}
