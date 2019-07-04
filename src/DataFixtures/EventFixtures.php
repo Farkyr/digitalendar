@@ -40,8 +40,8 @@ class EventFixtures extends Fixture implements DependentFixtureInterface
         $this->setReference("event-west",$event1);
 
         $event2 = new Event();
-        $event2->setTitle("Open Source Summit");
-        $event2->setSlug($this->slugger->slugify($event1->getTitle()));
+        $event2->setTitle("Paris Open Source Summit");
+        $event2->setSlug($this->slugger->slugify($event2->getTitle()));
         $event2->setPicture("parisopen.jpg");
         $event2->setCity($this->getReference("city-rennes"));
         $event2->addLanguage($this->getReference("language-english"));
@@ -56,9 +56,9 @@ class EventFixtures extends Fixture implements DependentFixtureInterface
         $this->setReference("event-open",$event2);
 
         $event3 = new Event();
-        $event3->setTitle("Big Data Paris");
-        $event3->setSlug($this->slugger->slugify($event1->getTitle()));
-        $event3->setPicture("parisopen.jpg");
+        $event3->setTitle("ErepDay");
+        $event3->setSlug($this->slugger->slugify($event3->getTitle()));
+        $event3->setPicture("erepday.png");
         $event3->setCity($this->getReference("city-paris"));
         $event3->addLanguage($this->getReference("language-french"));
         $event3->addLanguage($this->getReference("language-english"));
@@ -66,7 +66,7 @@ class EventFixtures extends Fixture implements DependentFixtureInterface
         $event3->setDescription("Lorem ipsum... ");
         $event3->setDateStart(new \DateTime("2019-03-15"));
         $event3->setDateEnd(new \DateTime("2019-03-17"));
-        $event3->setUrl("https://www.blogdumoderateur.com/evenements/big-data-paris/");
+        $event3->setUrl("https://www.erepday.fr/");
         $event3->setPrice(790);
         $event3->setIsValid();
         $manager->persist($event3);
